@@ -16,8 +16,6 @@ function Navlink() {
             <img src='./planet.png' />
             <h1>Space Traveller' Hub</h1>
           </div>
-          <div>
-          </div>
         </nav>
       </header>
     </div>
