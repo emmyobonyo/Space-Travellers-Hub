@@ -3,22 +3,36 @@ import {
   BrowserRouter as Router,
   Switch,
   Route,
-  Link,
 } from 'react-router-dom';
-
+import { NavLink } from 'react-router-dom';
+import Rockets from '../Rockets/Rockets';
+import './Navlink.css';
+import logo from './assets/planet.png'
 
 function Navlink() {
   return (
-    <div>
-      <header>
-        <nav>
-          <div>
-            <img src='./planet.png' />
-            <h1>Space Traveller' Hub</h1>
-          </div>
-        </nav>
-      </header>
-    </div>
+    <Router>
+      <div>
+        <header>
+          <nav>
+            <div className='logo'>
+              <img src={logo} alt='logo' className='logo'/>
+              <h1>Space Traveller' Hub</h1>
+            </div>
+            <ul>
+              <li>
+                <NavLink to='/' activeClassName='active'>Rockets</NavLink>
+              </li>
+            </ul>
+          </nav>
+          <Switch>
+            <Route path='/'>
+              <Rockets />
+            </Route>
+          </Switch>
+        </header>
+      </div>
+    </Router>
   )
 }
 
