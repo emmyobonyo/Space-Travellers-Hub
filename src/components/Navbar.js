@@ -24,11 +24,11 @@ const Navbar = () => {
   return (
     <>
       <nav className="nav-bar">
-        <div>
-          <img src={logo} alt="Space-Ship Logo" />
-          <h3>Space Travelers&apos; Hub</h3>
+        <div className="image">
+          <img src={logo} className="img" alt="Space-Ship Logo" />
+          <h3 className="head">Space Travelers&apos; Hub</h3>
         </div>
-        <ul>
+        <ul className="list">
           {links.map((link) => (
             <li key={link.id}>
               <NavLink
