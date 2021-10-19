@@ -1,9 +1,10 @@
+import Navlink from './components/Navigation/Navlink';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <p>This is a React App</p>
+      <Navlink />
     </div>
   );
 }

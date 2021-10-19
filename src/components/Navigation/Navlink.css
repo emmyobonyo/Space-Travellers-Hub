@@ -1,0 +1,22 @@
+a:active {
+  text-decoration: underline;
+}
+
+.logo img {
+  width: 100px;
+  height: 100px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 15px;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  justify-content: space-between;
+  width: 25%;
+  align-items: center;
+}
