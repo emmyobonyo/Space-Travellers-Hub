@@ -1,0 +1,33 @@
+.logo img {
+  width: 75px;
+  height: 75px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 30px;
+  align-items: center;
+  border-bottom: 2px solid gray;
+}
+
+.logo {
+  display: flex;
+  justify-content: space-between;
+  width: 25%;
+  align-items: center;
+}
+
+ul {
+  list-style-type: none;
+  overflow: hidden;
+}
+
+a {
+  color: #79B7FD;
+  text-decoration: none;
+}
+
+.active {
+  text-decoration: underline;
+}
