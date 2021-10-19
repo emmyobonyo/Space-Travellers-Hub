@@ -12,7 +12,8 @@
   gap: 3%;
 }
 
-.image, .list {
+.image,
+.list {
   display: flex;
 }
 
