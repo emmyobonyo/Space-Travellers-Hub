@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.nav-bar {
+  border-bottom: 1px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 3%;
+}
+
+.image,
+.list {
+  display: flex;
+}
+
+.head {
+  font-size: 28px;
+  margin-top: 25px;
+  margin-left: 10px;
+}
+
+.img {
+  width: 10%;
+  margin-left: 25px;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: rgb(0, 153, 255);
+  padding-right: 25px;
+}
+
+.current {
+  text-decoration: underline;
+}
