@@ -11,6 +11,7 @@ function Rockets() {
   return (
     <>
       <p>Hello World</p>
+      <p>This is the Rockets page</p>
     </>
   );
 }
