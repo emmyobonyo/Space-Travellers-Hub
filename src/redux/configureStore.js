@@ -1,11 +1,10 @@
-/* eslint-disable import/no-extraneous-dependencies */
-import { createStore, applyMiddleware, combineReducers } from 'redux';
-import thunk from 'redux-thunk';
+import { createStore, combineReducers, applyMiddleware } from 'redux';
 import logger from 'redux-logger';
-import rocketsReducer from './Rockets/rockets';
+import thunk from 'redux-thunk';
+import missionsReducer from './missions/missions';
 
 const reducer = combineReducers({
-  rocketsReducer,
+  missionsReducer,
 });
 
 const store = createStore(
