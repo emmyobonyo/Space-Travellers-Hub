@@ -1,3 +1,4 @@
+/* eslint-disable import/named */
 import { React, useEffect } from 'react';
 import { useDispatch } from 'react-redux';
 import { fetchData } from '../redux/missions/missions';
