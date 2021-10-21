@@ -12,7 +12,13 @@ function Rockets() {
   return (
     <div>
       { rockets.map((rocket) => (
-        <p key={rocket.id}>{ rocket.description }</p>
+        <div key={rocket.id}>
+          <img alt="rocket" src={rocket.image} />
+          <div>
+            <h2>{ rocket.name }</h2>
+            <p>{ rocket.description }</p>
+          </div>
+        </div>
       )) }
     </div>
   );
