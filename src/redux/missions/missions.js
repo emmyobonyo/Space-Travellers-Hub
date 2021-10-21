@@ -9,12 +9,12 @@ export const fetchMissions = (missions) => ({
 
 export const joinMission = (missions) => ({
   type: JOIN_MISSIONS,
-  payloads: missions,
+  payload: missions,
 });
 
 export const leaveMission = (missions) => ({
   type: LEAVE_MISSIONS,
-  missions,
+  payload: missions,
 });
 
 export const fetchMIssionsFromApi = async () => {
