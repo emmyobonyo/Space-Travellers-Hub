@@ -105,3 +105,32 @@ td:nth-child(4) {
   background-color: gray;
   color: #fff;
 }
+
+.rocket {
+  width: 90%;
+  margin: auto;
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.rocket-image {
+  width: 25%;
+}
+
+.rocket-information {
+  width: 72%;
+}
+
+.rocket-information-elements {
+  margin-bottom: 10px;
+}
+
+button {
+  background-color: #3f99fd;
+  color: white;
+  padding: 10px 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 15px;
+}
