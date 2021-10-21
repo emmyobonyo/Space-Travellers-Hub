@@ -145,3 +145,10 @@ td:nth-child(4) {
   border: 2px solid gray;
   cursor: pointer;
 }
+
+span {
+  background-color: #3EB1C5;
+  color: white;
+  padding: 3px;
+  border-radius: 5px;
+}
