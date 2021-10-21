@@ -18,6 +18,9 @@ body {
   align-items: center;
   justify-content: flex-start;
   gap: 3%;
+  width: 90%;
+  margin: auto;
+  padding: 10px 0;
 }
 
 .image,
@@ -150,5 +153,17 @@ span {
   background-color: #3eb1c5;
   color: white;
   padding: 3px;
+  border-radius: 5px;
+}
+
+.profile {
+  width: 90%;
+  margin: auto;
+  margin-top: 20px;
+}
+
+.profile-rockets {
+  border: 1px solid black;
+  padding: 10px;
   border-radius: 5px;
 }
