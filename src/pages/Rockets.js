@@ -12,11 +12,12 @@ function Rockets() {
   return (
     <div>
       { rockets.map((rocket) => (
-        <div key={rocket.id}>
-          <img alt="rocket" src={rocket.image} />
-          <div>
-            <h2>{ rocket.name }</h2>
-            <p>{ rocket.description }</p>
+        <div key={rocket.id} className="rocket">
+          <img alt="rocket" src={rocket.image} className="rocket-image" />
+          <div className="rocket-information">
+            <h2 className="rocket-information-elements">{ rocket.name }</h2>
+            <p className="rocket-information-elements">{ rocket.description }</p>
+            <button type="button" className="rocket-information-elements">Reserve Rocket</button>
           </div>
         </div>
       )) }
