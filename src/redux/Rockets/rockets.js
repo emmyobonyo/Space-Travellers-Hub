@@ -1,5 +1,6 @@
 const initialState = [];
 const FETCH_DATA = 'react-spacex/rockets/FETCH_DATA';
+
 const JOIN_ROCKET = 'react-spacex/rockets/JOIN_ROCKET';
 const CANCEL_ROCKET = 'react-spacex/rockets/JOIN_ROCKET';
 
