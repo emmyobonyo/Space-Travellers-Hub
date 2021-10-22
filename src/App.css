@@ -162,14 +162,18 @@ span {
   border-radius: 5px;
 }
 
-.profile {
-  width: 90%;
-  margin: auto;
-  margin-top: 20px;
+main {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 10px;
 }
 
-.profile-rockets {
-  border: 1px solid black;
-  padding: 10px;
-  border-radius: 5px;
+.profile-rockets,
+.my-list {
+  border: 1px solid lightgray;
+}
+
+.my-list {
+  border: 1px solid lightgray;
+  padding: 25px 200px 20px  25px;
 }
