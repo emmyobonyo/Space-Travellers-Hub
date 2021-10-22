@@ -28,7 +28,7 @@ const SingleMission = ({
           ? (
             <button
               type="button"
-              className="btn join"
+              className="join"
               onClick={() => dispatch(joinMission(id))}
             >
               Join Mission
@@ -37,7 +37,7 @@ const SingleMission = ({
           : (
             <button
               type="button"
-              className="btn leave"
+              className="btn-leave leave"
               onClick={() => dispatch(leaveMission(id))}
             >
               Leave Mission

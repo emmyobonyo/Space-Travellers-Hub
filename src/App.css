@@ -105,10 +105,26 @@ td:nth-child(4) {
   transition: 300ms;
 }
 
-.join:hover,
-.leave:hover {
+.join:hover {
   background-color: gray;
   color: #fff;
+}
+
+.active {
+  color: #fff;
+  background-color: rgb(61, 123, 221);
+  padding: 4px 6px;
+  font-size: 13px;
+  border-radius: 5px;
+}
+
+.btn-leave {
+  padding: 8px 12px;
+  color: red;
+  background-color: #fff;
+  border-radius: 5px;
+  border: 2px solid red;
+  cursor: pointer;
 }
 
 button {
@@ -169,10 +185,6 @@ main {
 }
 
 .profile-rockets,
-.my-list {
-  border: 1px solid lightgray;
-}
-
 .my-list {
   border: 1px solid lightgray;
   padding: 25px 200px 20px  25px;
