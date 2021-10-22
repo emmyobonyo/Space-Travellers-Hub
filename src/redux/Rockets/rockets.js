@@ -1,25 +1,20 @@
-import { createAsyncThunk } from '@reduxjs/toolkit';
-
 const initialState = [];
-const FETCH_DATA = 'spaceTravlers/missions/FETCH_DATA';
+const FETCH_DATA = 'react-spacex/rockets/FETCH_DATA';
 
-export const fetchRockets = createAsyncThunk(
-  'rockets/fetchRockets',
-  async (dispatch) => {
-    const response = await fetch('https://api.spacexdata.com/v3/rockets');
-    const rockets = await response.json();
-    const newRocket = [];
-    rockets.forEach((rocket, id) => {
-      newRocket.push({
-        id: rocket[id].id,
-        name: rocket[id].name,
-        description: rocket[id].description,
-        image: rocket[id].flickr_images,
-      });
+export const fetchRockets = () => async (dispatch) => {
+  const response = await fetch('https://api.spacexdata.com/v3/rockets');
+  const rockets = await response.json();
+  const newRocket = [];
+  rockets.forEach((rocket) => {
+    newRocket.push({
+      id: rocket.rocket_id,
+      name: rocket.rocket_name,
+      description: rocket.description,
+      image: rocket.flickr_images,
     });
-    dispatch({ type: 'FETCH_ROCKETS', newRocket });
-  },
-);
+  });
+  dispatch({ type: FETCH_DATA, newRocket });
+};
 
 export const fetchRocketsAction = (payload) => ({
   type: FETCH_DATA,
@@ -28,7 +23,7 @@ export const fetchRocketsAction = (payload) => ({
 
 const rocketsReducer = (state = initialState, action) => {
   switch (action.type) {
-    case fetchRocketsAction:
+    case FETCH_DATA:
       return action.newRocket;
     default:
       return state;
