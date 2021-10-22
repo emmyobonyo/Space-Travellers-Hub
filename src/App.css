@@ -95,7 +95,8 @@ td:nth-child(4) {
   border-radius: 5px;
 }
 
-.join {
+.join,
+.leave {
   padding: 8px 12px;
   border-radius: 5px;
   outline: none;
@@ -104,9 +105,14 @@ td:nth-child(4) {
   transition: 300ms;
 }
 
-.join:hover {
+.join:hover,
+.leave:hover {
   background-color: gray;
   color: #fff;
+}
+
+button {
+  margin-top: 10px;
 }
 
 .rocket {
