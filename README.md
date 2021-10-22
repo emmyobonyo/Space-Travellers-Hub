@@ -35,11 +35,20 @@ $ npm install
 $ npm start
 ```
 
+## Authors
+
 👤 **Emmanuel Obonyo**
 
 - GitHub: [@emmyobonyo](https://github.com/emmyobonyo)
 - Twitter: [@emmyobonyo](https://twitter.com/emmyobonyo)
 - LinkedIn: [Emmanuel Obonyo](https://www.linkedin.com/in/emmanuel-obonyo-3728a2200/)
+
+👤 **Emmanuelle Kamwa**
+
+-   Github: [@emmanuellekamwa](https://github.com/emmanuellekamwa)
+-   Twitter: [@AlixKamwa](https://twitter.com/AlixKamwa)
+-   Linkedin: [emmanuelle-kamwa-86145a1a4](https://www.linkedin.com/in/emmanuelle-kamwa-86145a1a4/)
+
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
