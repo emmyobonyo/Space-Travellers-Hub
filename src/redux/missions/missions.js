@@ -25,6 +25,7 @@ export const fetchMIssionsFromApi = async () => {
       id: mission.mission_id,
       name: mission.mission_name,
       description: mission.description,
+      wikipedia: mission.wikipedia,
     }
   ));
   return newResponse;
@@ -50,23 +51,21 @@ const missionsReducer = (state = initialState, action) => {
     case JOIN_MISSIONS:
       return {
         ...state,
-        newMissions: state.newMissions.map((mission) => {
-          if (mission.mission_id !== action.id) {
-            return { ...mission };
-          }
-          return { ...mission, reserved: true };
-        }),
+        newMissions: state.newMissions.map((mission) => (
+          (mission.id !== action.missions)
+            ? { ...mission }
+            : { ...mission, reserved: true }
+        )),
       };
 
     case LEAVE_MISSIONS:
       return {
         ...state,
-        newMissions: state.newMissions.map((mission) => {
-          if (mission.mission_id !== action.id) {
-            return { ...mission };
-          }
-          return { ...mission, reserved: false };
-        }),
+        newMissions: state.newMissions.map((mission) => (
+          (mission.id !== action.missions)
+            ? { ...mission }
+            : { ...mission, reserved: false }
+        )),
       };
     default:
       return state;
