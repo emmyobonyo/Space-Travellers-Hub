@@ -4,17 +4,17 @@ const LEAVE_MISSIONS = 'react-spacex/missions/LEAVE_MISSIONS';
 
 export const fetchMissions = (missions) => ({
   type: FETCH_MISSIONS,
-  payloads: missions,
+  missions,
 });
 
 export const joinMission = (missions) => ({
   type: JOIN_MISSIONS,
-  payload: missions,
+  missions,
 });
 
 export const leaveMission = (missions) => ({
   type: LEAVE_MISSIONS,
-  payload: missions,
+  missions,
 });
 
 export const fetchMIssionsFromApi = async () => {
