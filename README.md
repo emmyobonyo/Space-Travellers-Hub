@@ -1,6 +1,6 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Star Travellers
+# Space Travellers Hub
 
 > A Web App that allows clients to book trips to the Stars and beyond.
 
