@@ -1,4 +1,3 @@
-/* eslint-disable no-unused-expressions */
 import React from 'react';
 import { render } from '@testing-library/react';
 import '@testing-library/jest-dom/extend-expect';
@@ -15,20 +14,22 @@ it('should return the Navigation', () => {
   expect(navigation).toMatchSnapshot();
 });
 
-it('should return the rockets page', () => {
-  const rockets = render(<Provider store={store}><Rockets /></Provider>);
-  expect(rockets).toMatchSnapshot();
-  expect(rockets.queryByText(/Rockets/)).toBeInTheDocument;
-});
+describe('click events', () => {
+  test('should return the rockets page', () => {
+    const rockets = render(<Provider store={store}><Rockets /></Provider>);
+    expect(rockets).toMatchSnapshot();
+    expect(rockets.queryByText(/All Rockets/)).toBeInTheDocument();
+  });
 
-it('should return the missions page', () => {
-  const missions = render(<Provider store={store}><Missions /></Provider>);
-  expect(missions).toMatchSnapshot();
-  expect(missions.queryByText(/Missions/)).toBeInTheDocument;
-});
+  test('should return the missions page', () => {
+    const missions = render(<Provider store={store}><Missions /></Provider>);
+    expect(missions).toMatchSnapshot();
+    expect(missions.queryByText(/Mission/)).toBeInTheDocument();
+  });
 
-it('should return the rockets page', () => {
-  const profile = render(<Provider store={store}><Profile /></Provider>);
-  expect(profile).toMatchSnapshot();
-  expect(profile.queryByText(/My Missions/)).toBeInTheDocument;
+  test('should return the profile page', () => {
+    const profile = render(<Provider store={store}><Profile /></Provider>);
+    expect(profile).toMatchSnapshot();
+    expect(profile.queryByText(/My Missions/)).toBeInTheDocument();
+  });
 });

@@ -19,6 +19,7 @@ function Rockets() {
 
   return (
     <div>
+      <h1 className="rocket-heading">All Rockets</h1>
       { rockets.map((rocket) => (
         <div key={rocket.id} className="rocket">
           <img alt="rocket" src={rocket.image} className="rocket-image" />
