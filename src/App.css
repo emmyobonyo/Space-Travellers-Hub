@@ -139,6 +139,12 @@ button {
   justify-content: space-between;
 }
 
+.rocket-heading {
+  width: 90%;
+  margin: auto;
+  margin-top: 20px;
+}
+
 .rocket-image {
   width: 25%;
 }
