@@ -1,76 +1,60 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Project Name
+# Star Travellers
 
-> One paragraph statement about the project.
+> A Web App that allows clients to book trips to the Stars and beyond.
 
-![screenshot](./app_screenshot.png)
+![Rockets Page](./src/images/rockets.png)
+![Missions Page](./src/images/missions.png)
 
-Additional description about the project and its features.
+- A User can view a list of all the available rockets and then reserve the rocket of their choice.
+- A User can cancel a reserved rocket.
+- A User can view a list of available missions and join a mission of their choice.
+- A User can also cancel a chosen mission for reasons only known to them.
+- A User can view a list of all their chosen Rockets and Missions on their profile page.
 
 ## Built With
 
-- Major languages
-- Frameworks
-- Technologies used
+- JSX, CSS
+- React
 
-## Live Demo
+<!-- ## Live Demo
 
-[Live Demo Link](https://livedemo.com)
+- [Netlify](https://bookstore-react-redux.netlify.app/) -->
 
+# Set Up
+## Clone This Repository
+```
+$ git clone https://github.com/emmyobonyo/Star-Travellers-Hub.git
+$ cd Star-Travellers-Hub
+```
 
-## Getting Started
-
-**This is an example of how you may give instructions on setting up your project locally.**
-**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
-
-
-To get a local copy up and running follow these simple example steps.
-
-### Prerequisites
-
-### Setup
-
-### Install
-
-### Usage
-
-### Run tests
-
-### Deployment
-
-
+## Run Project
+```
+$ npm install
+$ npm start
+```
 
 ## Authors
 
-👤 **Author1**
+👤 **Emmanuel Obonyo**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- GitHub: [@emmyobonyo](https://github.com/emmyobonyo)
+- Twitter: [@emmyobonyo](https://twitter.com/emmyobonyo)
+- LinkedIn: [Emmanuel Obonyo](https://www.linkedin.com/in/emmanuel-obonyo-3728a2200/)
 
-👤 **Author2**
+👤 **Emmanuelle Kamwa**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+-   Github: [@emmanuellekamwa](https://github.com/emmanuellekamwa)
+-   Twitter: [@AlixKamwa](https://twitter.com/AlixKamwa)
+-   Linkedin: [emmanuelle-kamwa-86145a1a4](https://www.linkedin.com/in/emmanuelle-kamwa-86145a1a4/)
 
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](../../issues/).
+Feel free to check the [issues page](https://github.com/emmyobonyo/Math-Magiians-Raect/issues).
 
 ## Show your support
 
 Give a ⭐️ if you like this project!
-
-## Acknowledgments
-
-- Hat tip to anyone whose code was used
-- Inspiration
-- etc
-
-## 📝 License
-
-This project is [MIT](./MIT.md) licensed.
